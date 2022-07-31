@@ -1,8 +1,9 @@
 :root {
-  --blue: blue;
+  --blue: #0d47a1;
   --dark-purple: #87209e;
-
+  --black: black;
   --imp-text-color: black;
+  --typewriter-gradient: linear-gradient(to right, #40ee2d, #fe3384);
 }
 /* html {
   --section-background-color: linear-gradient(
@@ -215,7 +216,7 @@ button:focus {
 /* --------- */
 .wave {
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.1s; /* Change to speed up or slow down */
+  animation-duration: 2s; /* Change to speed up or slow down */
   animation-iteration-count: infinite; /* Never stop waving :) */
   transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
   display: inline-block;
@@ -256,7 +257,7 @@ button:focus {
 }
 
 .home-header {
-  padding-top: 80px !important;
+  padding-top: 2em !important;
 }
 
 .home-section {
@@ -275,27 +276,28 @@ button:focus {
 }
 
 .heading {
-  font-size: 2.4em !important;
-  padding-left: 50px !important;
+  font-size: 2rem !important;
+  padding-left: 1rem !important;
 }
 
 .heading-name {
-  font-size: 2.5em !important;
-  padding-left: 45px !important;
+  font-size: 2.5rem !important;
+  padding-left: 1rem !important;
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: var(--black);
+  font-size: 2.8rem;
 }
 
 .Typewriter__wrapper {
-  font-size: 2.2em !important;
-  color: #be6adf !important;
+  font-size: 2rem !important;
+  color: var(--typewriter-gradient) !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
-  font-size: 2.4em !important;
-  color: #b562d6 !important;
+  font-size: 2.2rem !important;
+  color: var(--black) !important;
 }
 
 @media (max-width: 767px) {
