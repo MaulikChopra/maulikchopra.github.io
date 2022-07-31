@@ -2,7 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
-import { AiFillGithub, AiOutlineTwitter, AiFillYoutube } from "react-icons/ai";
+import {
+  AiFillGithub,
+  AiFillMediumCircle,
+  AiOutlineTwitter,
+  AiFillYoutube,
+} from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
@@ -96,6 +101,16 @@ function Home2() {
                   className="icon-colour home-social-icons"
                 >
                   <AiFillYoutube />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.medium.com/@maulikchopra"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour home-social-icons"
+                >
+                  <AiFillMediumCircle />
                 </a>
               </li>
             </ul>
