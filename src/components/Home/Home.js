@@ -17,7 +17,11 @@ function Home() {
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
-                  <img src={hiByeEmoji} style={{ width: "75%" }}></img>
+                  <img
+                    src={hiByeEmoji}
+                    alt="hi bye animation"
+                    style={{ width: "75%" }}
+                  ></img>
                 </span>
               </h1>
 

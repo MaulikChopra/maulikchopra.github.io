@@ -6,51 +6,6 @@ function Particle() {
     <Particles
       id="tsparticles"
       params={{
-        particles: {
-          number: {
-            value: 160,
-            density: {
-              enable: true,
-              value_area: 1500,
-            },
-          },
-          onHover: {
-            enable: true,
-            mode: "repulse",
-          },
-          line_linked: {
-            enable: false,
-            opacity: 0.03,
-          },
-          move: {
-            direction: "right",
-            speed: 1,
-          },
-          size: {
-            value: 2,
-          },
-          opacity: {
-            anim: {
-              enable: true,
-              speed: 3,
-              opacity_min: 0.25,
-            },
-          },
-        },
-        interactivity: {
-          events: {
-            onclick: {
-              enable: true,
-              mode: "push",
-            },
-          },
-          modes: {
-            push: {
-              particles_nb: 1,
-            },
-          },
-        },
-        retina_detect: true,
         fps_limit: 60,
         interactivity: {
           detect_on: "canvas",
