@@ -4,13 +4,14 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/Maulik Chopra.svg";
 import { Link } from "react-router-dom";
-import { ImBlog } from "react-icons/im";
+import { HashLink } from "react-router-hash-link";
+// import { ImBlog } from "react-icons/im";
 import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-
+import { FaLaptopCode } from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
@@ -27,6 +28,11 @@ function NavBar() {
 
   window.addEventListener("scroll", scrollHandler);
 
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -90;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+  };
   return (
     <Navbar
       expanded={expand}
@@ -51,26 +57,36 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+              <Nav.Link as={HashLink} smooth to="/#top">
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
+                as={HashLink}
+                smooth
+                to="/#about"
+                scroll={(el) => scrollWithOffset(el)}
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                as={HashLink}
+                to="/#experience"
+                scroll={(el) => scrollWithOffset(el)}
+              >
+                <FaLaptopCode style={{ marginBottom: "2px" }} /> Experience
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
+                as={HashLink}
+                to="/#projects"
+                scroll={(el) => scrollWithOffset(el)}
               >
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
@@ -89,7 +105,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
                 href="https://www.medium.com/@maulikchopra"
                 target="_blank"
@@ -97,17 +113,6 @@ function NavBar() {
               >
                 <ImBlog style={{ marginBottom: "2px" }} /> Blogs
               </Nav.Link>
-            </Nav.Item>
-
-            {/* <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/soumyajit4419/Portfolio"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
             </Nav.Item> */}
           </Nav>
         </Navbar.Collapse>

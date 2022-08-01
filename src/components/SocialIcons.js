@@ -5,11 +5,17 @@ import {
   AiFillMediumCircle,
   AiFillYoutube,
 } from "react-icons/ai";
+import { HiMail } from "react-icons/hi";
 import { FaLinkedinIn } from "react-icons/fa";
 
 export default function SocialIcons() {
   return (
     <ul className="footer-icons">
+      <li className="social-icons">
+        <a href="mailto:maulikchopra10@gmail.com" style={{ color: "white" }}>
+          <HiMail size={35} />
+        </a>
+      </li>
       <li className="social-icons">
         <a
           href="https://github.com/maulikchopra"

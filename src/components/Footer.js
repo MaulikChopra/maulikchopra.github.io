@@ -1,27 +1,21 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 import SocialIcons from "./SocialIcons";
 
 function Footer() {
   return (
-    <Container fluid className="footer">
-      <Row>
-        {/* COPYRIGHT INFO */}
-        <Col md="6" className="footer-copywright">
-          <h3>Designed, Developed, & Ⓒ by Maulik Chopra</h3>
-        </Col>
+    <Container fluid className="footer" id="bottom">
+      {/* COPYRIGHT INFO */}
 
-        {/* OTHER INFO */}
-        <Col md="2" className="footer-copywright">
-          {/* <h3> {year} © Maulik Chopra</h3> */}
-        </Col>
+      <h3 style={{ float: "left" }}>
+        Designed, Developed, & Ⓒ by Maulik Chopra
+      </h3>
 
-        {/* SOCIAL ICONS */}
-        <Col md="4" className="footer-body">
-          <SocialIcons />
-        </Col>
-      </Row>
+      {/* SOCIAL ICONS */}
+      <div style={{ float: "right" }}>
+        <SocialIcons />
+      </div>
     </Container>
   );
 }

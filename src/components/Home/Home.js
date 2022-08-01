@@ -11,6 +11,7 @@ import TechGauntlet from "../../Assets/my-tech-gauntlet-stonesV2.png";
 import gauntletmini from "../../Assets/gauntlet-mini.png";
 import Technologies from "../../Assets/Technologies.png";
 import SocialIcons from "../SocialIcons";
+import Projects from "../Projects/Projects";
 
 function Home() {
   return (
@@ -39,11 +40,7 @@ function Home() {
               <div style={{ paddingLeft: "1rem", textAlign: "left" }}>
                 <Type />
               </div>
-              <div
-                style={{
-                  marginTop: "2rem",
-                }}
-              >
+              <div className="Home-social-icons">
                 <SocialIcons />
               </div>
             </Col>
@@ -64,60 +61,90 @@ function Home() {
         <Container>
           <Row>
             <Col md={8} className="home-about-description">
-              <h1 style={{ fontSize: "2.6em", textAlign: "left" }}>
+              <h1
+                id="about"
+                style={{
+                  textAlign: "left",
+                }}
+              >
                 A bit<span className="purple"> about </span> me
               </h1>
               <p className="home-about-body">
                 I love coding in
-                <i>
-                  <b className="purple">
-                    &nbsp;JavaScript/TypeScript and Python.&nbsp;
-                  </b>
-                </i>
-                <br />
+                <b className="purple">
+                  &nbsp;JavaScript/TypeScript and Python.&nbsp;
+                </b>
                 <br />I am experienced in building
-                <i>
-                  <b className="purple">
-                    &nbsp;WebSites, Apps, and Products&nbsp;
-                  </b>
-                </i>
-                <br />
+                <b className="purple">
+                  &nbsp;WebSites, Apps, and Products&nbsp;
+                </b>
                 <br /> I work with modern frameworks like
-                <i>
-                  <b className="purple">
-                    &nbsp;Django, Node.js, React.js, Next.js&nbsp;
-                  </b>
-                </i>
+                <b className="purple">
+                  &nbsp;Django, Node.js, React.js, Next.js&nbsp;
+                </b>
                 and libraries like
-                <i>
-                  <b className="purple">
-                    &nbsp;bootstrap, tailwind, redux, express.js, Django REST
-                    framework.&nbsp;
-                  </b>
-                </i>
-                <br />
+                <b className="purple">
+                  &nbsp;bootstrap, tailwind, redux, express.js, Django REST
+                  framework.&nbsp;
+                </b>
                 <br />I excel in Databases and deployment using
-                <i>
-                  <b className="purple">
-                    &nbsp;Firebase, MongoDB, SQL, AWS, Heroku/netlify, and cloud
-                    funcitons.&nbsp;
-                  </b>
-                </i>
-                <br />
+                <b className="purple">
+                  &nbsp;Firebase, MongoDB, SQL, AWS, Heroku/netlify, and cloud
+                  funcitons.&nbsp;
+                </b>
                 <br />
                 My other areas of Interest are
-                <i>
-                  <b className="purple">
-                    &nbsp;Arduino, Robotics, and Aerospace engineering.&nbsp;
-                  </b>
-                </i>
+                <b className="purple">
+                  &nbsp;Arduino, Robotics, and Aerospace engineering.&nbsp;
+                </b>
+              </p>
+
+              {/* MY EXPERIENCE */}
+              <h1
+                style={{
+                  marginTop: "2rem",
+                  textAlign: "left",
+                  color: "white",
+                }}
+              >
+                My <span className="purple">Experience</span>
+              </h1>
+              <p style={{ textAlign: "left" }}>
+                <h4>
+                  Founder @ <b className="purple">AssitCheck.org</b>
+                </h4>
+                <i>June 2021 - February 2022</i>
+                <br />
+                <span style={{ opacity: "0.5" }}>
+                  AssistCheck is a volunteer/task management application that
+                  helps small-scale institutions and nonprofits that cannot
+                  employ technologically literate employees and require User
+                  Interfaces in the local language.
+                </span>
+                <br />
+                <ul>
+                  <li>
+                    Built native windows application using python Tkinter
+                    library. Ability to import .csv data using pandas and
+                    generate “task buttons” that are displayed in a simple UI
+                    with the local language.
+                  </li>
+                  <li>
+                    Pitched the idea to various institutes and partnered with
+                    swera rising run, khushboo welfare society, and Benson
+                    medical India. The application now runs at multiple NGOs
+                    like the above.
+                  </li>
+                </ul>
               </p>
             </Col>
+
+            {/* RIGHT COLUMN */}
             <Col md={4} className="myAvtar">
+              {/* MY SKILLSET IMAGE */}
               <h2
                 style={{
                   color: "white",
-                  fontSize: "2.6em",
                   textAlign: "right",
                 }}
               >
@@ -131,18 +158,15 @@ function Home() {
                   style={{ borderRadius: "15px" }}
                 />
               </Tilt>
-            </Col>
-          </Row>
-          <Row>
-            <Col md={8}>
-              <h1
-                style={{ fontSize: "2.6em", textAlign: "left", color: "white" }}
+
+              {/* MY TECH GAUNTLET IMAGE */}
+              <h2
+                style={{
+                  color: "white",
+                  textAlign: "right",
+                  marginTop: "1rem",
+                }}
               >
-                My <span className="purple">Experience</span>
-              </h1>
-            </Col>
-            <Col md={4} className="myAvtar">
-              <h2 style={{ color: "white", textAlign: "right" }}>
                 My Tech Gauntlet!
                 <img
                   src={gauntletmini}
@@ -165,23 +189,17 @@ function Home() {
               </Tilt>
             </Col>
           </Row>
+
+          {/* PROJECTS */}
           <Row>
-            <Col md={8}>
+            <Col>
               <h1
+                id="projects"
                 style={{ fontSize: "2.6em", textAlign: "left", color: "white" }}
               >
                 My <span className="purple">Projects</span>
               </h1>
-            </Col>
-            <Col md={4}>
-              <h2 style={{ color: "white", textAlign: "right" }}>
-                My Creative side!
-                <img
-                  src={gauntletmini}
-                  style={{ width: "10%" }}
-                  alt="gauntlet mini"
-                />
-              </h2>
+              <Projects />
             </Col>
           </Row>
         </Container>
