@@ -15,52 +15,52 @@ import Projects from "../Projects/Projects";
 
 function Home() {
   return (
-    <section>
-      <Container fluid className="home-section" id="home">
-        <Particle />
-        <Container className="home-content">
-          <Row>
-            <Col md={7} className="home-header">
-              <h1 className="heading">
-                Hi! {"  "}
-                <span className="wave" role="img" aria-labelledby="wave">
-                  <img
-                    src={hiByeEmoji}
-                    alt="hi bye animation"
-                    style={{ width: "75%" }}
-                  ></img>
-                </span>
-              </h1>
+    <Container fluid className="home-section" id="home">
+      <Particle />
+      <Container className="home-content">
+        <Row>
+          <Col md={7} className="home-header">
+            <h1 className="heading">
+              Hi! {"  "}
+              <span className="wave" role="img" aria-labelledby="wave">
+                <img
+                  src={hiByeEmoji}
+                  alt="hi bye animation"
+                  style={{ width: "75%" }}
+                ></img>
+              </span>
+            </h1>
 
-              <h1 className="heading-name">
-                I'm
-                <b className="main-name"> Maulik Chopra</b>
-              </h1>
+            <h1 className="heading-name">
+              I'm
+              <b className="main-name"> Maulik Chopra</b>
+            </h1>
 
-              <div style={{ paddingLeft: "1rem", textAlign: "left" }}>
-                <Type />
-              </div>
-              <div className="Home-social-icons">
-                <SocialIcons />
-              </div>
-            </Col>
+            <div style={{ paddingLeft: "1rem", textAlign: "left" }}>
+              <Type />
+            </div>
+            <div className="Home-social-icons">
+              <SocialIcons />
+            </div>
+          </Col>
 
-            <Col md={5}>
-              <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                // style={{ maxHeight: "800px" }}
-              />
-            </Col>
-          </Row>
-        </Container>
+          <Col md={5}>
+            <img
+              src={homeLogo}
+              alt="home pic"
+              className="img-fluid"
+              // style={{ maxHeight: "800px" }}
+            />
+          </Col>
+        </Row>
+      </Container>
 
-        {/* <Home2 /> */}
+      {/* <Home2 /> */}
 
-        <Container>
-          <Row>
-            <Col md={8} className="home-about-description">
+      <Container>
+        <Row>
+          <Col md={8} className="home-about-description">
+            <div className="box-shadow">
               <h1
                 id="about"
                 style={{
@@ -98,16 +98,20 @@ function Home() {
                   &nbsp;Arduino, Robotics, and Aerospace engineering.&nbsp;
                 </b>
               </p>
+            </div>
 
-              {/* MY EXPERIENCE */}
+            {/* MY EXPERIENCE */}
+            <div className="box-shadow">
               <h1
                 style={{
-                  marginTop: "2rem",
                   textAlign: "left",
                   color: "white",
                 }}
               >
-                My <span className="purple">Experience</span>
+                My{" "}
+                <span className="purple" id="experience">
+                  Experience
+                </span>
               </h1>
               <p style={{ textAlign: "left" }}>
                 <h4>
@@ -137,10 +141,12 @@ function Home() {
                   </li>
                 </ul>
               </p>
-            </Col>
+            </div>
+          </Col>
 
-            {/* RIGHT COLUMN */}
-            <Col md={4} className="myAvtar">
+          {/* RIGHT COLUMN */}
+          <Col md={4} className="myAvtar">
+            <div className="box-shadow">
               {/* MY SKILLSET IMAGE */}
               <h2
                 style={{
@@ -158,8 +164,10 @@ function Home() {
                   style={{ borderRadius: "15px" }}
                 />
               </Tilt>
+            </div>
 
-              {/* MY TECH GAUNTLET IMAGE */}
+            {/* MY TECH GAUNTLET IMAGE */}
+            <div className="box-shadow">
               <h2
                 style={{
                   color: "white",
@@ -167,7 +175,7 @@ function Home() {
                   marginTop: "1rem",
                 }}
               >
-                My Tech Gauntlet!
+                My Tech Gauntlet
                 <img
                   src={gauntletmini}
                   style={{ width: "10%" }}
@@ -187,24 +195,24 @@ function Home() {
                   ></img>
                 </span>
               </Tilt>
-            </Col>
-          </Row>
+            </div>
+          </Col>
+        </Row>
 
-          {/* PROJECTS */}
-          <Row>
-            <Col>
-              <h1
-                id="projects"
-                style={{ fontSize: "2.6em", textAlign: "left", color: "white" }}
-              >
-                My <span className="purple">Projects</span>
-              </h1>
-              <Projects />
-            </Col>
-          </Row>
-        </Container>
+        {/* PROJECTS */}
+        <Row>
+          <Col>
+            <h1
+              id="projects"
+              style={{ fontSize: "2.6em", textAlign: "left", color: "white" }}
+            >
+              My <span className="purple">Projects</span>
+            </h1>
+            <Projects />
+          </Col>
+        </Row>
       </Container>
-    </section>
+    </Container>
   );
 }
 

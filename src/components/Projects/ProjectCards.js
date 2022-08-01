@@ -7,32 +7,46 @@ import { BsGithub } from "react-icons/bs";
 function ProjectCards(props) {
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+      <Card.Img
+        className="card-img-top"
+        variant="top"
+        src={props.imgPath}
+        alt="card-img"
+      />
+
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
+        <Card.Title className="project-heading">{props.title}</Card.Title>
+
+        <Card.Text style={{ textAlign: "left" }}>
           {props.description}
+          <br />
+          <i style={{ fontWeight: "500" }}>{props.tech}</i>
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
-        {"\n"}
-        {"\n"}
 
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
-        {!props.isBlog && props.demoLink && (
+        <div style={{ bottom: "0", position: "absloute" }}>
           <Button
-            variant="primary"
-            href={props.demoLink}
+            variant="success"
+            href={props.ghLink}
             target="_blank"
-            style={{ marginLeft: "10px" }}
+            style={{ bottom: "0", position: "absloute" }}
           >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
+            <BsGithub /> &nbsp;
+            {props.isBlog ? "Blog" : "GitHub"}
           </Button>
-        )}
+          {"\n"}
+          {"\n"}
+          {props.demoLink && (
+            <Button
+              variant="success"
+              href={props.demoLink}
+              target="_blank"
+              style={{ marginLeft: "10px" }}
+            >
+              <CgWebsite /> &nbsp;
+              {"Demo"}
+            </Button>
+          )}
+        </div>
       </Card.Body>
     </Card>
   );
