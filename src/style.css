@@ -2,7 +2,7 @@
   --blue: #0d47a1;
   --dark-purple: #87209e;
   --black: black;
-  --imp-text-color: black;
+  --imp-text-color: rgb(29, 168, 255);
   --typewriter-gradient: linear-gradient(to right, #40ee2d, #fe3384);
 }
 /* html {
@@ -254,7 +254,7 @@ button:focus {
   background-size: cover !important;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: -100000;
 }
 
 .home-header {
@@ -265,13 +265,14 @@ button:focus {
   position: relative;
   z-index: 1;
 
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
   background-position: top center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 .home-content {
-  padding: 5rem 0 2rem !important;
+  padding-top: 5rem !important;
+  padding-bottom: 0px;
   color: whitesmoke;
   text-align: left;
 }
@@ -324,9 +325,9 @@ button:focus {
   }
 }
 
-.home-about-section {
+/* .home-about-section {
   z-index: 1;
-}
+} */
 
 .home-about-description {
   color: white !important;

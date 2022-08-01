@@ -14,8 +14,8 @@ function Home() {
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
+              <h1 className="heading">
+                Hi! {"  "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   <img
                     src={hiByeEmoji}
@@ -35,12 +35,12 @@ function Home() {
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
+            <Col md={5}>
               <img
                 src={homeLogo}
                 alt="home pic"
                 className="img-fluid"
-                style={{ maxHeight: "800px" }}
+                // style={{ maxHeight: "800px" }}
               />
             </Col>
           </Row>

@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
+import TechGauntlet from "../../Assets/my-tech-gauntlet-stonesV2.png";
+import gauntletmini from "../../Assets/gauntlet-mini.png";
 import {
   AiFillGithub,
   AiFillMediumCircle,
@@ -16,37 +18,52 @@ function Home2() {
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
+            <h1 style={{ fontSize: "2.6em", textAlign: "left" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
+              I love coding in
               <i>
-                <b className="purple"> JavaScript/TS and Python. </b>
+                <b className="purple">
+                  &nbsp;JavaScript/TypeScript and Python.&nbsp;
+                </b>
               </i>
               <br />
-              <br />
-              My field of Interest's are building new &nbsp;
+              <br />I am experienced in building
               <i>
-                <b className="purple">WebSites, Apps, and Products </b> and also
-                in areas related to{" "}
                 <b className="purple">
-                  Arduino, Robotics, and Aerospace engineering.
+                  &nbsp;WebSites, Apps, and Products&nbsp;
+                </b>
+              </i>
+              <br />
+              <br /> I work with modern frameworks like
+              <i>
+                <b className="purple">
+                  &nbsp;Django, Node.js, React.js, Next.js&nbsp;
+                </b>
+              </i>
+              and libraries like
+              <i>
+                <b className="purple">
+                  &nbsp;bootstrap, tailwind, redux, express.js, Django REST
+                  framework.&nbsp;
+                </b>
+              </i>
+              <br />
+              <br />I excel in Databases and deployment using
+              <i>
+                <b className="purple">
+                  &nbsp;Firebase, MongoDB, SQL, AWS, Heroku/netlify, and cloud
+                  funcitons.&nbsp;
                 </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Python, Node.js</b> and
+              My other areas of Interest are
               <i>
-                <b className="purple"> Modern Libraries and Frameworks</b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple">Django, React.js, and Next.js</b>
+                <b className="purple">
+                  &nbsp;Arduino, Robotics, and Aerospace engineering.&nbsp;
+                </b>
               </i>
             </p>
           </Col>
@@ -57,6 +74,25 @@ function Home2() {
           </Col>
         </Row>
         <Row>
+          <h1 style={{ color: "white" }}>
+            Here's my Tech Gauntlet!
+            <img
+              src={gauntletmini}
+              style={{ width: "5%" }}
+              alt="gauntlet mini"
+            ></img>
+          </h1>
+
+          <span>
+            <img
+              src={TechGauntlet}
+              style={{ marginBottom: "1rem", borderRadius: "10px" }}
+              alt="techGauntlet"
+            ></img>
+          </span>
+        </Row>
+
+        {/* <Row>
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
@@ -115,7 +151,7 @@ function Home2() {
               </li>
             </ul>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </Container>
   );
