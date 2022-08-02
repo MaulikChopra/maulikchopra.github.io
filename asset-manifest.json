@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.14f40989.css",
-    "main.js": "/static/js/main.581dcfce.js",
+    "main.css": "/static/css/main.7d598b36.css",
+    "main.js": "/static/js/main.b241372a.js",
     "static/js/787.d16e9580.chunk.js": "/static/js/787.d16e9580.chunk.js",
     "static/media/my-tech-gauntlet-stonesV2.png": "/static/media/my-tech-gauntlet-stonesV2.6103cf0258a0dd482fc3.png",
     "static/media/auctionaire4.png": "/static/media/auctionaire4.1296b97724e574d11035.png",
@@ -13,14 +13,14 @@
     "static/media/gauntlet-mini.png": "/static/media/gauntlet-mini.c35425db4118d5f7d496.png",
     "static/media/gummy-coding.svg": "/static/media/gummy-coding.416f716a30918316b80fa5878945bee5.svg",
     "static/media/Maulik Chopra.svg": "/static/media/Maulik Chopra.fc6e85b361ded2d4cfb04771a3335760.svg",
-    "static/media/pre.svg": "/static/media/pre.c761e89ae1146c58c4b2.svg",
     "index.html": "/index.html",
-    "main.14f40989.css.map": "/static/css/main.14f40989.css.map",
-    "main.581dcfce.js.map": "/static/js/main.581dcfce.js.map",
+    "static/media/pre.svg": "/static/media/pre.c761e89ae1146c58c4b2.svg",
+    "main.7d598b36.css.map": "/static/css/main.7d598b36.css.map",
+    "main.b241372a.js.map": "/static/js/main.b241372a.js.map",
     "787.d16e9580.chunk.js.map": "/static/js/787.d16e9580.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.14f40989.css",
-    "static/js/main.581dcfce.js"
+    "static/css/main.7d598b36.css",
+    "static/js/main.b241372a.js"
   ]
 }
