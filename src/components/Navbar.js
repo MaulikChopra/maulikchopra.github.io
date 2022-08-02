@@ -13,11 +13,11 @@ import {
 } from "react-icons/ai";
 import { FaLaptopCode } from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg";
+import { MdWork } from "react-icons/md";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
-
   function scrollHandler() {
     if (window.scrollY >= 20) {
       updateNavbar(true);
@@ -57,7 +57,14 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={HashLink} smooth to="/#top">
+              <Nav.Link
+                as={HashLink}
+                smooth
+                to="/#top"
+                onClick={() => {
+                  updateExpanded(false);
+                }}
+              >
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
@@ -68,6 +75,9 @@ function NavBar() {
                 smooth
                 to="/#about"
                 scroll={(el) => scrollWithOffset(el)}
+                onClick={() => {
+                  updateExpanded(false);
+                }}
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
@@ -77,8 +87,24 @@ function NavBar() {
                 as={HashLink}
                 to="/#experience"
                 scroll={(el) => scrollWithOffset(el)}
+                onClick={() => {
+                  updateExpanded(false);
+                }}
               >
-                <FaLaptopCode style={{ marginBottom: "2px" }} /> Experience
+                <MdWork style={{ marginBottom: "2px" }} /> Experience
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={HashLink}
+                to="/#skillset"
+                scroll={(el) => scrollWithOffset(el)}
+                onClick={() => {
+                  updateExpanded(false);
+                }}
+              >
+                <FaLaptopCode style={{ marginBottom: "2px" }} /> My Skillset
               </Nav.Link>
             </Nav.Item>
 
@@ -87,6 +113,9 @@ function NavBar() {
                 as={HashLink}
                 to="/#projects"
                 scroll={(el) => scrollWithOffset(el)}
+                onClick={() => {
+                  updateExpanded(false);
+                }}
               >
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
@@ -104,16 +133,6 @@ function NavBar() {
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
-
-            {/* <Nav.Item>
-              <Nav.Link
-                href="https://www.medium.com/@maulikchopra"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
-              </Nav.Link>
-            </Nav.Item> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

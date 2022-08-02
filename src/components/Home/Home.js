@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-// import Particle from "../Particle";
 import Type from "./Type";
 import Tilt from "react-parallax-tilt";
 
@@ -10,7 +9,7 @@ import hiByeEmoji from "../../Assets/hi-bye-emoji.png";
 import TechGauntlet from "../../Assets/my-tech-gauntlet-stonesV2.png";
 import gauntletmini from "../../Assets/gauntlet-mini.png";
 import Technologies from "../../Assets/Technologies.png";
-import SocialIcons from "../SocialIcons";
+import SocialIcons from "../other/SocialIcons";
 import Projects from "../Projects/Projects";
 
 function Home() {
@@ -153,6 +152,7 @@ function Home() {
                   color: "white",
                   textAlign: "right",
                 }}
+                id="skillset"
               >
                 My SkillSet
               </h2>
