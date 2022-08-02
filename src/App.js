@@ -9,6 +9,8 @@ import Resume from "./components/Resume/ResumeNew";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+// import { Container } from "react-bootstrap";
+import Particle from "./components/Particle";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -24,6 +26,7 @@ function App() {
   return (
     <Router>
       <Preloader load={load} />
+      <Particle />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <Routes>

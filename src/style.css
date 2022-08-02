@@ -286,6 +286,7 @@ button:focus {
 .home-section {
   position: relative;
   z-index: 1;
+  /* min-height: 100vh; */
   padding-bottom: 0px;
   margin-bottom: 0px;
 }
@@ -360,10 +361,16 @@ button:focus {
   text-align: left;
 }
 
+/* SOCIAL ICONS.JS CSS */
+
 .social-icons {
-  display: inline-block !important;
-  padding-right: 15px;
-  padding-left: 15px;
+  display: flex !important;
+  padding-left: 0px;
+}
+.single-icon {
+  list-style: none;
+  margin-inline: 1rem;
+  margin-left: 0px;
 }
 
 .icon-colour {
@@ -371,6 +378,7 @@ button:focus {
 }
 
 .Home-social-icons {
+  margin-left: 1rem;
   margin-top: 2rem;
 }
 @media (max-width: 767px) {
@@ -381,26 +389,50 @@ button:focus {
 /* --------- */
 /* Footer */
 /* --------- */
+
 .footer {
+  position: relative;
+  /* left: 0; */
+  bottom: 0;
+  width: 100%;
+  height: 2rem;
+  background-color: transparent;
+  text-align: center;
   z-index: 1;
+  backdrop-filter: blur(2.5px) !important;
+  box-shadow: 0px -10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+
+  /* height: 100%; */
 }
-
-@media (max-width: 767px) {
-  .footer h3 {
-    justify-content: center !important;
-  }
-
-  .footer-social-icons {
-    justify-content: center !important;
-  }
-}
-
 .footer h3 {
+  float: left;
   font-size: 1.25em;
   color: white !important;
-  margin-top: 0.5em !important;
-  margin-bottom: 0.5em !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
 }
+.Footer-social-icons {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  float: right;
+}
+@media (max-width: 767px) {
+  .footer {
+    padding-top: 1rem;
+    height: auto;
+  }
+  .footer h3 {
+    margin-top: 1rem;
+    float: none;
+    font-size: 1rem;
+  }
+  .Footer-social-icons {
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 /* BOX SHADOWS */
 
 .box-shadow {

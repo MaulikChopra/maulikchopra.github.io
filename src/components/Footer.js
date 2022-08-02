@@ -5,18 +5,14 @@ import SocialIcons from "./SocialIcons";
 
 function Footer() {
   return (
-    <Container fluid id="bottom">
-      <div className="footer">
-        {/* COPYRIGHT INFO */}
+    <Container className="footer" fluid id="bottom">
+      {/* COPYRIGHT INFO */}
 
-        <h3 style={{ float: "left" }}>
-          Designed, Developed, & Ⓒ by Maulik Chopra
-        </h3>
+      <h3>Designed, Developed, & Ⓒ by Maulik Chopra</h3>
 
-        {/* SOCIAL ICONS */}
-        <div style={{ float: "right" }}>
-          <SocialIcons />
-        </div>
+      {/* SOCIAL ICONS */}
+      <div className="Footer-social-icons">
+        <SocialIcons size="35" />
       </div>
     </Container>
   );

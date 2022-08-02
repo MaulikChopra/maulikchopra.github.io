@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-import Particle from "../Particle";
+// import Particle from "../Particle";
 import Type from "./Type";
 import Tilt from "react-parallax-tilt";
 
@@ -16,7 +16,6 @@ import Projects from "../Projects/Projects";
 function Home() {
   return (
     <Container fluid className="home-section" id="home">
-      <Particle />
       <Container className="home-content">
         <Row>
           <Col md={7} className="home-header">
@@ -39,8 +38,9 @@ function Home() {
             <div style={{ paddingLeft: "1rem", textAlign: "left" }}>
               <Type />
             </div>
+
             <div className="Home-social-icons">
-              <SocialIcons />
+              <SocialIcons size="35" />
             </div>
           </Col>
 
@@ -202,10 +202,7 @@ function Home() {
         {/* PROJECTS */}
         <Row>
           <Col>
-            <h1
-              id="projects"
-              style={{ fontSize: "2.6em", textAlign: "left", color: "white" }}
-            >
+            <h1 id="projects" style={{ textAlign: "left", color: "white" }}>
               My <span className="purple">Projects</span>
             </h1>
             <Projects />
