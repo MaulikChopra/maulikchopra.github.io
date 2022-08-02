@@ -104,7 +104,20 @@ function NavBar() {
                   updateExpanded(false);
                 }}
               >
-                <FaLaptopCode style={{ marginBottom: "2px" }} /> My Skillset
+                <FaLaptopCode style={{ marginBottom: "2px" }} /> My Skills
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={HashLink}
+                to="/#awards"
+                scroll={(el) => scrollWithOffset(el)}
+                onClick={() => {
+                  updateExpanded(false);
+                }}
+              >
+                <FaLaptopCode style={{ marginBottom: "2px" }} /> My Awards
               </Nav.Link>
             </Nav.Item>
 

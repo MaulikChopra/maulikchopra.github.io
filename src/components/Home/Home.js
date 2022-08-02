@@ -1,8 +1,10 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 import Type from "./Type";
 import Tilt from "react-parallax-tilt";
+import { CgFileDocument } from "react-icons/cg";
 
 import homeLogo from "../../Assets/gummy-coding.svg";
 import hiByeEmoji from "../../Assets/hi-bye-emoji.png";
@@ -11,6 +13,7 @@ import gauntletmini from "../../Assets/gauntlet-mini.png";
 import Technologies from "../../Assets/Technologies.png";
 import SocialIcons from "../other/SocialIcons";
 import Projects from "../Projects/Projects";
+import Awards from "../awards/awards";
 
 function Home() {
   return (
@@ -34,22 +37,27 @@ function Home() {
               <b className="main-name"> Maulik Chopra</b>
             </h1>
 
-            <div style={{ paddingLeft: "1rem", textAlign: "left" }}>
+            <div className="heading-auto-type">
               <Type />
             </div>
 
             <div className="Home-social-icons">
               <SocialIcons size="35" />
             </div>
+
+            <Button
+              variant="success"
+              as={Link}
+              to="/resume"
+              className="Home-resume-button"
+            >
+              <CgFileDocument />
+              &nbsp;My Resume
+            </Button>
           </Col>
 
           <Col md={5}>
-            <img
-              src={homeLogo}
-              alt="home pic"
-              className="img-fluid"
-              // style={{ maxHeight: "800px" }}
-            />
+            <img src={homeLogo} alt="home pic" className="Home-main-image" />
           </Col>
         </Row>
       </Container>
@@ -66,7 +74,7 @@ function Home() {
                   textAlign: "left",
                 }}
               >
-                A bit<span className="purple"> about </span> me
+                A bit<span className="black"> about </span> me
               </h1>
               <p className="home-about-body">
                 I love coding in
@@ -108,7 +116,7 @@ function Home() {
                 }}
               >
                 My{" "}
-                <span className="purple" id="experience">
+                <span className="black" id="experience">
                   Experience
                 </span>
               </h1>
@@ -118,7 +126,7 @@ function Home() {
                 </h4>
                 <i>June 2021 - February 2022</i>
                 <br />
-                <span style={{ opacity: "0.5" }}>
+                <span style={{ opacity: "0.75" }}>
                   AssistCheck is a volunteer/task management application that
                   helps small-scale institutions and nonprofits that cannot
                   employ technologically literate employees and require User
@@ -154,7 +162,7 @@ function Home() {
                 }}
                 id="skillset"
               >
-                My SkillSet
+                My <b className="black">Skills</b>
               </h2>
               <Tilt>
                 <img
@@ -199,11 +207,33 @@ function Home() {
           </Col>
         </Row>
 
+        {/* AWARDS LIST */}
+
+        <Row>
+          <Col>
+            <h1
+              style={{
+                textAlign: "left",
+                color: "white",
+              }}
+              id="awards"
+            >
+              My{" "}
+              <span className="black" id="experience">
+                Awards
+              </span>
+            </h1>
+            <p style={{ textAlign: "left" }}>
+              <Awards />
+            </p>
+          </Col>
+        </Row>
+
         {/* PROJECTS */}
         <Row>
           <Col>
             <h1 id="projects" style={{ textAlign: "left", color: "white" }}>
-              My <span className="purple">Projects</span>
+              My <span className="black">Projects</span>
             </h1>
             <Projects />
           </Col>

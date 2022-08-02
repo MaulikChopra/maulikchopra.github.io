@@ -45,3 +45,4 @@ function ResumeNew() {
 }
 
 export default ResumeNew;
+export { bitlyResumeLinkGoogleDrive };

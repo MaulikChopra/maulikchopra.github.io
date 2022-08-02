@@ -22,6 +22,7 @@ body {
 }
 .black {
   color: black;
+  font-weight: 800;
 }
 
 .purple {
@@ -172,12 +173,10 @@ button:focus {
 
 .navbar-nav .nav-link {
   color: white !important;
-  padding-right: 1rem !important;
-  padding-left: 1rem !important;
 }
 
 .nav-link {
-  padding: 0.8rem 1rem !important;
+  padding: 0rem 0.75rem !important;
 }
 
 @media (max-width: 767px) {
@@ -188,7 +187,6 @@ button:focus {
 
 .navbar-nav .nav-item {
   position: relative;
-  margin-left: 20px;
 }
 
 .navbar-nav .nav-item a {
@@ -205,7 +203,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: #000;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -262,6 +260,9 @@ button:focus {
   z-index: -100000;
 }
 
+.Home-main-image {
+  width: 100%;
+}
 .home-header {
   padding-top: 2em !important;
 }
@@ -281,20 +282,42 @@ button:focus {
   text-align: left;
   margin-bottom: 0px;
 }
+@media (max-width: 767px) {
+  .heading {
+    margin-left: 0px !important;
+  }
+  .heading-name {
+    margin-left: 0px !important;
+    font-size: 2rem !important;
+  }
+  .heading-auto-type {
+    margin-left: 0px !important;
+  }
+  .main-name {
+    font-size: 2.5rem !important;
+  }
+  .Home-resume-button {
+    margin-left: 0px !important;
+  }
+}
 
 .heading {
   font-size: 2rem !important;
-  padding-left: 1rem !important;
+  margin-left: 1rem;
 }
 
 .heading-name {
-  font-size: 2.5rem !important;
-  padding-left: 1rem !important;
+  font-size: 2.5rem;
+  margin-left: 1rem;
 }
-
+.heading-auto-type {
+  margin-left: 1rem;
+  text-align: left;
+}
 .main-name {
   color: var(--black);
   font-size: 2.8rem;
+  font-weight: 800;
 }
 
 .Typewriter__wrapper {
@@ -305,6 +328,11 @@ button:focus {
 .Typewriter__cursor {
   font-size: 2.2rem !important;
   color: var(--black) !important;
+}
+
+.Home-resume-button {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 767px) {
@@ -366,7 +394,8 @@ button:focus {
 }
 @media (max-width: 767px) {
   .Home-social-icons {
-    margin-top: 5rem;
+    margin-top: 4rem;
+    margin-left: 0px !important;
   }
 }
 /* --------- */

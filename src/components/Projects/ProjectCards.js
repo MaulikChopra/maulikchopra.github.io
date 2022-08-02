@@ -12,6 +12,12 @@ function ProjectCards(props) {
         variant="top"
         src={props.imgPath}
         alt="card-img"
+        style={{
+          width: `${props.imgSize}`,
+          objectFit: "contain",
+          marginLeft: "auto",
+          marginRight: "auto",
+        }}
       />
 
       <Card.Body>
@@ -24,15 +30,22 @@ function ProjectCards(props) {
         </Card.Text>
 
         <div style={{ bottom: "0", position: "absloute" }}>
-          <Button
-            variant="success"
-            href={props.ghLink}
-            target="_blank"
-            style={{ bottom: "0", position: "absloute" }}
-          >
-            <BsGithub /> &nbsp;
-            {props.isBlog ? "Blog" : "GitHub"}
-          </Button>
+          {props.ghLink && (
+            <Button
+              variant="success"
+              href={props.ghLink}
+              target="_blank"
+              style={{
+                bottom: "0",
+                position: "absloute",
+                marginBottom: "0.25rem",
+              }}
+            >
+              <BsGithub /> &nbsp;
+              {"GitHub"}
+            </Button>
+          )}
+
           {"\n"}
           {"\n"}
           {props.demoLink && (
@@ -44,6 +57,17 @@ function ProjectCards(props) {
             >
               <CgWebsite /> &nbsp;
               {"Demo"}
+            </Button>
+          )}
+          {props.certificateLink && (
+            <Button
+              variant="success"
+              href={props.certificateLink}
+              target="_blank"
+              style={{ marginLeft: "10px" }}
+            >
+              <CgWebsite /> &nbsp;
+              {"Certificate"}
             </Button>
           )}
         </div>
