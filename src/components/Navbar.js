@@ -34,6 +34,7 @@ function NavBar() {
   };
   return (
     <Navbar
+      fluid
       expanded={expand}
       fixed="top"
       expand="md"
@@ -55,7 +56,7 @@ function NavBar() {
           <span></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto" defaultActiveKey="#home">
+          <Nav className="mx-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link
                 as={HashLink}
