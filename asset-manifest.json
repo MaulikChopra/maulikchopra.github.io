@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8bf383c0.css",
-    "main.js": "/static/js/main.a674f9b1.js",
+    "main.js": "/static/js/main.a9fbf0fe.js",
     "static/js/787.d16e9580.chunk.js": "/static/js/787.d16e9580.chunk.js",
     "static/media/my-tech-gauntlet-stonesV2.png": "/static/media/my-tech-gauntlet-stonesV2.6103cf0258a0dd482fc3.png",
     "static/media/auctionaire4.png": "/static/media/auctionaire4.1296b97724e574d11035.png",
@@ -15,11 +15,11 @@
     "static/media/pre.svg": "/static/media/pre.c761e89ae1146c58c4b2.svg",
     "index.html": "/index.html",
     "main.8bf383c0.css.map": "/static/css/main.8bf383c0.css.map",
-    "main.a674f9b1.js.map": "/static/js/main.a674f9b1.js.map",
+    "main.a9fbf0fe.js.map": "/static/js/main.a9fbf0fe.js.map",
     "787.d16e9580.chunk.js.map": "/static/js/787.d16e9580.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8bf383c0.css",
-    "static/js/main.a674f9b1.js"
+    "static/js/main.a9fbf0fe.js"
   ]
 }
