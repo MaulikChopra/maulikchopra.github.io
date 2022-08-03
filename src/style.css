@@ -168,7 +168,19 @@ button:focus {
 }
 
 .logo {
-  width: 6rem !important;
+  display: none;
+  /* width: 100% !important; */
+}
+@media (max-width: 767px) {
+  .logo {
+    display: block;
+    /* margin-left: 0px !important; */
+    /* padding-left: 0px !important; */
+    /* font-size: 4rem; */
+    font-weight: 900;
+    color: #ffdf2b !important;
+    opacity: 0.75;
+  }
 }
 
 .navbar-nav .nav-link {
@@ -303,15 +315,15 @@ button:focus {
 
 .heading {
   font-size: 2rem !important;
-  margin-left: 1rem;
+  /* margin-left: 0rem; */
 }
 
 .heading-name {
   font-size: 2.5rem;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
 .heading-auto-type {
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   text-align: left;
 }
 .main-name {
@@ -321,17 +333,17 @@ button:focus {
 }
 
 .Typewriter__wrapper {
-  font-size: 2rem !important;
+  font-size: 1.8rem !important;
   color: var(--typewriter-gradient) !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
-  font-size: 2.2rem !important;
+  font-size: 2rem !important;
   color: var(--black) !important;
 }
 
 .Home-resume-button {
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   margin-bottom: 1rem;
 }
 
@@ -389,7 +401,7 @@ button:focus {
 }
 
 .Home-social-icons {
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   margin-top: 2rem;
 }
 @media (max-width: 767px) {

@@ -2,16 +2,15 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/Maulik Chopra.svg";
+// import logo from "../Assets/maulikportfoliobig.png";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-// import { ImBlog } from "react-icons/im";
 import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-import { FaLaptopCode } from "react-icons/fa";
+import { FaLaptopCode, FaAward } from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg";
 import { MdWork } from "react-icons/md";
 
@@ -42,7 +41,8 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
+          <div className="logo">MAULIK's PORTFOLIO</div>
+          {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -104,7 +104,7 @@ function NavBar() {
                   updateExpanded(false);
                 }}
               >
-                <FaLaptopCode style={{ marginBottom: "2px" }} /> My Skills
+                <FaLaptopCode style={{ marginBottom: "2px" }} /> Skills
               </Nav.Link>
             </Nav.Item>
 
@@ -117,7 +117,7 @@ function NavBar() {
                   updateExpanded(false);
                 }}
               >
-                <FaLaptopCode style={{ marginBottom: "2px" }} /> My Awards
+                <FaAward style={{ marginBottom: "2px" }} /> Awards
               </Nav.Link>
             </Nav.Item>
 
