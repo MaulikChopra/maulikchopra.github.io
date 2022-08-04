@@ -23,7 +23,7 @@ function Awards() {
             title="CS50’s Web Programming with Python and JavaScript"
             description="Learned to make Fullstack web apps using Django, React.js, and SQL."
             imgSize={imageSize}
-            tech="Grade: Passed"
+            tech="Grade: On-going"
           />
         </Col>
         <Col md={3} className="project-card">

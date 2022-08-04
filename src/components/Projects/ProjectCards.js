@@ -36,9 +36,7 @@ function ProjectCards(props) {
               href={props.ghLink}
               target="_blank"
               style={{
-                bottom: "0",
-                position: "absloute",
-                marginBottom: "0.25rem",
+                paddingBottom: "0.25rem",
               }}
             >
               <BsGithub /> &nbsp;

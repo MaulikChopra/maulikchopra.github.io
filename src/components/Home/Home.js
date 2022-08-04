@@ -3,48 +3,50 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import Type from "./Type";
-import Tilt from "react-parallax-tilt";
 import { CgFileDocument } from "react-icons/cg";
 
 import homeLogo from "../../Assets/gummy-coding.svg";
 import hiByeEmoji from "../../Assets/hi-bye-emoji.png";
-import TechGauntlet from "../../Assets/my-tech-gauntlet-stonesV2.png";
-import gauntletmini from "../../Assets/gauntlet-mini.png";
-import Technologies from "../../Assets/Technologies.png";
 import SocialIcons from "../other/SocialIcons";
 import Projects from "../Projects/Projects";
 import Awards from "../awards/awards";
+import About from "./About";
+import Experience from "./Experience";
+import { SkillGauntlet, SkillList } from "./Skills";
 
 function Home() {
   return (
     <Container fluid className="home-section" id="home">
+      {/* TOP LANDING SECTION */}
       <Container className="home-content">
         <Row>
+          {/* LEFT COLUMN */}
           <Col md={7} className="home-header">
+            {/* HI + WAVE EMOJI  */}
             <h1 className="heading">
               Hi! {"  "}
               <span className="wave" role="img" aria-labelledby="wave">
-                <img
-                  src={hiByeEmoji}
-                  alt="hi bye animation"
-                  style={{ width: "75%" }}
-                ></img>
+                <img src={hiByeEmoji} alt="hi bye animation"></img>
               </span>
             </h1>
 
+            {/* BOLD HEADING OF NAME */}
             <h1 className="heading-name">
               I'm
               <b className="main-name"> Maulik Chopra</b>
             </h1>
 
+            {/* AUTO TYPER HOME */}
             <div className="heading-auto-type">
               <Type />
             </div>
 
+            {/* SOCIAL ICONS HOME */}
             <div className="Home-social-icons">
               <SocialIcons size="35" />
             </div>
 
+            {/* RESUME BUTTON */}
             <Button
               variant="success"
               as={Link}
@@ -52,178 +54,55 @@ function Home() {
               className="Home-resume-button"
             >
               <CgFileDocument />
-              &nbsp;My Resume
+              My Resume
             </Button>
           </Col>
 
+          {/* RIGHT COLUMN */}
+          {/* HOME RIGHT SIDE PIC */}
           <Col md={5}>
             <img src={homeLogo} alt="home pic" className="Home-main-image" />
           </Col>
         </Row>
       </Container>
 
-      {/* <Home2 /> */}
-
+      {/* AFTER TOP LANDING SECTION */}
       <Container>
         <Row>
+          {/* LEFT COLUMN */}
           <Col md={8} className="home-about-description">
+            {/* A BIT ABOUT ME */}
             <div className="box-shadow">
-              <h1
-                id="about"
-                style={{
-                  textAlign: "left",
-                }}
-              >
-                A bit<span className="black"> about </span> me
-              </h1>
-              <p className="home-about-body">
-                I love coding in
-                <b className="purple">
-                  &nbsp;JavaScript/TypeScript and Python.&nbsp;
-                </b>
-                <br />I am experienced in building
-                <b className="purple">
-                  &nbsp;WebSites, Apps, and Products&nbsp;
-                </b>
-                <br /> I work with modern frameworks like
-                <b className="purple">
-                  &nbsp;Django, Node.js, React.js, Next.js&nbsp;
-                </b>
-                and libraries like
-                <b className="purple">
-                  &nbsp;bootstrap, tailwind, redux, express.js, Django REST
-                  framework.&nbsp;
-                </b>
-                <br />I excel in Databases and deployment using
-                <b className="purple">
-                  &nbsp;Firebase, MongoDB, SQL, AWS, Heroku/netlify, and cloud
-                  funcitons.&nbsp;
-                </b>
-                <br />
-                My other areas of Interest are
-                <b className="purple">
-                  &nbsp;Arduino, Robotics, and Aerospace engineering.&nbsp;
-                </b>
-              </p>
+              <About />
             </div>
 
             {/* MY EXPERIENCE */}
             <div className="box-shadow">
-              <h1
-                style={{
-                  textAlign: "left",
-                  color: "white",
-                }}
-              >
-                My{" "}
-                <span className="black" id="experience">
-                  Experience
-                </span>
-              </h1>
-              <p style={{ textAlign: "left" }}>
-                <h4>
-                  Founder @ <b className="purple">AssitCheck.org</b>
-                </h4>
-                <i>June 2021 - February 2022</i>
-                <br />
-                <span style={{ opacity: "0.75" }}>
-                  AssistCheck is a volunteer/task management application that
-                  helps small-scale institutions and nonprofits that cannot
-                  employ technologically literate employees and require User
-                  Interfaces in the local language.
-                </span>
-                <br />
-                <ul>
-                  <li>
-                    Built native windows application using python Tkinter
-                    library. Ability to import .csv data using pandas and
-                    generate “task buttons” that are displayed in a simple UI
-                    with the local language.
-                  </li>
-                  <li>
-                    Pitched the idea to various institutes and partnered with
-                    swera rising run, khushboo welfare society, and Benson
-                    medical India. The application now runs at multiple NGOs
-                    like the above.
-                  </li>
-                </ul>
-              </p>
+              <Experience />
             </div>
           </Col>
 
           {/* RIGHT COLUMN */}
           <Col md={4} className="myAvtar">
+            {/* MY SKILLSET IMAGE */}
             <div className="box-shadow">
-              {/* MY SKILLSET IMAGE */}
-              <h2
-                style={{
-                  color: "white",
-                  textAlign: "right",
-                }}
-                id="skillset"
-              >
-                My <b className="black">Skills</b>
-              </h2>
-              <Tilt>
-                <img
-                  src={Technologies}
-                  className="img-fluid"
-                  alt="technologies"
-                  style={{ borderRadius: "15px" }}
-                />
-              </Tilt>
+              <SkillList />
             </div>
 
             {/* MY TECH GAUNTLET IMAGE */}
             <div className="box-shadow">
-              <h2
-                style={{
-                  color: "white",
-                  textAlign: "right",
-                  marginTop: "1rem",
-                }}
-              >
-                My Tech Gauntlet
-                <img
-                  src={gauntletmini}
-                  style={{ width: "10%" }}
-                  alt="gauntlet mini"
-                />
-              </h2>
-              <Tilt>
-                <span>
-                  <img
-                    src={TechGauntlet}
-                    style={{
-                      width: "100%",
-                      marginBottom: "1rem",
-                      borderRadius: "10px",
-                    }}
-                    alt="techGauntlet"
-                  ></img>
-                </span>
-              </Tilt>
+              <SkillGauntlet />
             </div>
           </Col>
         </Row>
 
         {/* AWARDS LIST */}
-
         <Row>
           <Col>
-            <h1
-              style={{
-                textAlign: "left",
-                color: "white",
-              }}
-              id="awards"
-            >
-              My{" "}
-              <span className="black" id="experience">
-                Awards
-              </span>
+            <h1 id="awards">
+              My <span className="secondary-color-heading">Awards</span>
             </h1>
-            <p style={{ textAlign: "left" }}>
+            <p>
               <Awards />
             </p>
           </Col>
@@ -232,8 +111,8 @@ function Home() {
         {/* PROJECTS */}
         <Row>
           <Col>
-            <h1 id="projects" style={{ textAlign: "left", color: "white" }}>
-              My <span className="black">Projects</span>
+            <h1 id="projects">
+              My <span className="secondary-color-heading">Projects</span>
             </h1>
             <Projects />
           </Col>

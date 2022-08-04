@@ -11,45 +11,45 @@ import { FaLinkedinIn } from "react-icons/fa";
 export default function SocialIcons(props) {
   return (
     <ul className="social-icons">
-      <li className="single-icon">
-        <a href="mailto:maulikchopra10@gmail.com" style={{ color: "white" }}>
+      <li className="single-icon-list">
+        <a href="mailto:maulikchopra10@gmail.com" className="single-icon">
           <HiMail size={props.size} />
         </a>
       </li>
-      <li className="single-icon">
+      <li className="single-icon-list">
         <a
           href="https://github.com/maulikchopra"
-          style={{ color: "white" }}
+          className="single-icon"
           target="_blank"
           rel="noopener noreferrer"
         >
           <AiFillGithub size={props.size} />
         </a>
       </li>
-      <li className="single-icon">
+      <li className="single-icon-list">
         <a
           href="https://twitter.com/IamMaulikChopra"
-          style={{ color: "white" }}
+          className="single-icon"
           target="_blank"
           rel="noopener noreferrer"
         >
           <AiOutlineTwitter size={props.size} />
         </a>
       </li>
-      <li className="single-icon">
+      <li className="single-icon-list">
         <a
           href="https://www.linkedin.com/in/maulikchopra/"
-          style={{ color: "white" }}
+          className="single-icon"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaLinkedinIn size={props.size} />
         </a>
       </li>
-      <li className="single-icon">
+      <li className="single-icon-list">
         <a
           href="https://www.medium.com/@maulikchopra"
-          style={{ color: "white" }}
+          className="single-icon"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -57,10 +57,10 @@ export default function SocialIcons(props) {
         </a>
       </li>
 
-      <li className="single-icon">
+      <li className="single-icon-list">
         <a
           href="https://www.youtube.com/buildwithmaulik"
-          style={{ color: "white" }}
+          className="single-icon"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -99,7 +99,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={HashLink}
-                to="/#skillset"
+                to="/#skills"
                 scroll={(el) => scrollWithOffset(el)}
                 onClick={() => {
                   updateExpanded(false);
