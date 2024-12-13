@@ -5,63 +5,77 @@ import { Link } from "react-router-dom";
 import Type from "./Type";
 import { CgFileDocument } from "react-icons/cg";
 
-import homeLogo from "../../Assets/gummy-coding.svg";
-import hiByeEmoji from "../../Assets/hi-bye-emoji.png";
+import homeLogo from "../../Assets/maulikpic.png";
+// import hiByeEmoji from "../../Assets/hi-bye-emoji.png";
 import SocialIcons from "../other/SocialIcons";
 import Projects from "../Projects/Projects";
 import Awards from "../awards/awards";
 import About from "./About";
 import Experience from "./Experience";
 import { SkillGauntlet, SkillList } from "./Skills";
+import { HashLink } from "react-router-hash-link";
+import Education from "./Education";
 
 function Home() {
   return (
-    <Container fluid className="home-section" id="home">
-      {/* TOP LANDING SECTION */}
-      <Container className="home-content">
-        <Row>
+    <Container fluid className="home-section md:max-w-7xl z-10" id="home">
+      <Container className=" flex justify-center md:mt-0 mt-14 items-center min-h-[80vh] py-10">
+        <Row className="w-full md:max-w-5xl text-left">
           {/* LEFT COLUMN */}
-          <Col md={7} className="home-header">
+          <Col md={7} className=" flex flex-col">
             {/* HI + WAVE EMOJI  */}
-            <h1 className="heading">
-              Hi! {"  "}
-              <span className="wave" role="img" aria-labelledby="wave">
-                <img src={hiByeEmoji} alt="hi bye animation"></img>
-              </span>
+            <h1 className="text-3xl md:text-4xl font-semibold mb-4">
+              Hi! 👋🏻
+              {/* <span className="wave" role="img" aria-labelledby="wave">
+                <img
+                  src={hiByeEmoji}
+                  alt="hi bye animation"
+                  className="inline-block"
+                />
+              </span> */}
             </h1>
 
             {/* BOLD HEADING OF NAME */}
-            <h1 className="heading-name">
-              I'm
-              <b className="main-name"> Maulik Chopra</b>
+            <h1 className=" text-2xl lg:text-5xl mb-4">
+              I'm{" "}
+              <b className=" text-4xl md:text-6xl font-bold text-textColor">
+                Maulik Chopra
+              </b>
             </h1>
 
             {/* AUTO TYPER HOME */}
-            <div className="heading-auto-type">
+            <div className=" text-white">
               <Type />
             </div>
 
             {/* SOCIAL ICONS HOME */}
-            <div className="Home-social-icons">
-              <SocialIcons size="35" />
+            <div className="Home-social-icons mb-4">
+              <SocialIcons size="30" />
             </div>
 
-            {/* RESUME BUTTON */}
-            <Button
-              variant="success"
-              as={Link}
-              to="/resume"
-              className="Home-resume-button"
+            <a
+              href="https://drive.google.com/file/d/1sJkFA9ZiZBIZnML9Sh3jGGj0oG5hs4-v/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex text-white"
             >
-              <CgFileDocument />
-              My Resume
-            </Button>
+              <div className="border-1 flex rounded-md p-2 border-textColor font-bold transition duration-200 hover:bg-textColor">
+                {/* <CgFileDocument className="mr-2" /> */}
+                📄 &nbsp; My Resume
+              </div>
+            </a>
           </Col>
 
           {/* RIGHT COLUMN */}
-          {/* HOME RIGHT SIDE PIC */}
-          <Col md={5}>
-            <img src={homeLogo} alt="home pic" className="Home-main-image" />
+          <Col
+            md={5}
+            className="flex justify-center md:justify-start mt-6 md:mt-0"
+          >
+            <img
+              src={homeLogo}
+              alt="home pic"
+              className=" object-cover rounded-3xl"
+            />
           </Col>
         </Row>
       </Container>
@@ -70,14 +84,14 @@ function Home() {
       <Container>
         <Row>
           {/* LEFT COLUMN */}
-          <Col md={8} className="home-about-description">
+          <Col md={8} className="text-white">
             {/* A BIT ABOUT ME */}
-            <div className="box-shadow">
+            <div className="md:border-b-2 border-b-2 mb-4 pb-4">
               <About />
             </div>
 
             {/* MY EXPERIENCE */}
-            <div className="box-shadow">
+            <div className="">
               <Experience />
             </div>
           </Col>
@@ -85,36 +99,29 @@ function Home() {
           {/* RIGHT COLUMN */}
           <Col md={4} className="myAvtar">
             {/* MY SKILLSET IMAGE */}
-            <div className="box-shadow">
+            <div className="md:border-l-2 md:border-t-0 border-t-2 md:pl-4">
               <SkillList />
             </div>
 
             {/* MY TECH GAUNTLET IMAGE */}
-            <div className="box-shadow">
-              <SkillGauntlet />
+            <div className="border-t-2 mb-8 mt-12"></div>
+            <div className="md:border-l-2 md:pl-4">
+              <Education />
             </div>
-          </Col>
-        </Row>
-
-        {/* AWARDS LIST */}
-        <Row>
-          <Col>
-            <h1 id="awards">
-              My <span className="secondary-color-heading">Awards</span>
-            </h1>
-            <p>
-              <Awards />
-            </p>
           </Col>
         </Row>
 
         {/* PROJECTS */}
         <Row>
           <Col>
-            <h1 id="projects">
-              My <span className="secondary-color-heading">Projects</span>
-            </h1>
             <Projects />
+          </Col>
+        </Row>
+
+        {/* AWARDS LIST */}
+        <Row>
+          <Col>
+            <Awards />
           </Col>
         </Row>
       </Container>

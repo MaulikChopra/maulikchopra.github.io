@@ -8,7 +8,9 @@ function SkillList() {
   return (
     <>
       <h2 id="skills">
-        My <b className="secondary-color-heading">Skills</b>
+        <h1 className="text-textColor font-bold md:text-5xl text-4xl text-center mt-4 mb-8">
+          Skills
+        </h1>
       </h2>
       <Tilt>
         <img

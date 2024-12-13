@@ -5,7 +5,8 @@ import Button from "react-bootstrap/Button";
 
 import { AiOutlineDownload } from "react-icons/ai";
 
-const bitlyResumeLinkGoogleDrive = "https://bit.ly/37YjBx2";
+const resumelink =
+  "https://drive.google.com/file/d/1sJkFA9ZiZBIZnML9Sh3jGGj0oG5hs4-v/view?usp=drive_link";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
@@ -22,7 +23,7 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="success"
-            href={bitlyResumeLinkGoogleDrive}
+            href={resumelink}
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
@@ -33,7 +34,7 @@ function ResumeNew() {
 
         <iframe
           id="iframe"
-          src="https://drive.google.com/file/d/1NMBbQQHGZJUkqT5L-wz6kEmaZyvZjQ1Q/preview"
+          src={resumelink}
           width={width - 0.5 * width}
           height={height - 0.3 * height}
           allow="autoplay"
@@ -45,4 +46,4 @@ function ResumeNew() {
 }
 
 export default ResumeNew;
-export { bitlyResumeLinkGoogleDrive };
+export { resumelink };

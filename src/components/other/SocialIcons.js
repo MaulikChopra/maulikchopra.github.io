@@ -33,7 +33,7 @@ export default function SocialIcons(props) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <AiOutlineTwitter size={props.size} />
+          {/* <AiOutlineTwitter size={props.size} />
         </a>
       </li>
       <li className="single-icon-list">
@@ -42,11 +42,11 @@ export default function SocialIcons(props) {
           className="single-icon"
           target="_blank"
           rel="noopener noreferrer"
-        >
+        > */}
           <FaLinkedinIn size={props.size} />
         </a>
       </li>
-      <li className="single-icon-list">
+      {/* <li className="single-icon-list">
         <a
           href="https://www.medium.com/@maulikchopra"
           className="single-icon"
@@ -55,9 +55,9 @@ export default function SocialIcons(props) {
         >
           <AiFillMediumCircle size={props.size} />
         </a>
-      </li>
+      </li> */}
 
-      <li className="single-icon-list">
+      {/* <li className="single-icon-list">
         <a
           href="https://www.youtube.com/buildwithmaulik"
           className="single-icon"
@@ -66,7 +66,7 @@ export default function SocialIcons(props) {
         >
           <AiFillYoutube size={props.size} />
         </a>
-      </li>
+      </li> */}
     </ul>
   );
 }

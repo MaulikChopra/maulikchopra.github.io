@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap");
-body {
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap");
+/* body {
   font-family: "Sora", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to right, #1565c0, #1565c0);
-  margin: 0px;
-}
+  background-image: linear-gradient(to right, #010810, #010810);
+  margin: 0;
+} */
 .App {
   text-align: center;
 }
@@ -15,7 +16,7 @@ body {
   --black: black;
   --white: white;
   --imp-text-color: rgb(29, 168, 255);
-  --secondary-color: #000;
+  --secondary-color: #f76363;
   font-size: 16px;
 }
 
@@ -54,7 +55,7 @@ h4 {
 /* --------- */
 /*  Preloader */
 /* --------- */
-#preloader {
+/* #preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -65,11 +66,11 @@ h4 {
   background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 
-#preloader-none {
+/* #preloader-none {
   opacity: 0;
-}
+} */
 
 #no-scroll {
   overflow: hidden;
@@ -112,7 +113,7 @@ h4 {
 .navbar {
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
-  padding: 0.3rem 2rem !important;
+  padding: 1rem 2rem !important;
   font-size: 1.2rem !important;
   background-color: transparent;
 }
@@ -285,11 +286,12 @@ h4 {
 }
 #tsparticles {
   position: fixed !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  width: 100%;
-  height: 100%;
-  z-index: -100000;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: -10; /* Behind other content */
+  pointer-events: none; /* Prevent interaction blocking */
 }
 
 .Home-main-image {
@@ -297,11 +299,10 @@ h4 {
 }
 .home-header {
   padding-top: 2em !important;
+  text-align: left;
 }
 
 .home-section {
-  position: relative;
-  z-index: 1;
   /* min-height: 100vh; */
   padding-bottom: 0px;
   margin-bottom: 0px;
@@ -313,6 +314,14 @@ h4 {
   color: whitesmoke;
   text-align: left;
   margin-bottom: 0px;
+  align-content: center;
+  max-width: 80% !important; /* Optional: Ensure it doesn’t grow too large */
+}
+@media (max-width: 768px) {
+  /* For tablets and smaller screens */
+  .home-content {
+    max-width: 100% !important; /* Make it take more width on smaller screens */
+  }
 }
 @media (max-width: 767px) {
   .heading {
@@ -328,7 +337,7 @@ h4 {
   .main-name {
     font-size: 2.5rem !important;
   }
-  .Home-resume-button {
+  .Home-resume- {
     margin-left: 0px !important;
   }
 }
@@ -420,7 +429,7 @@ h4 {
   color: var(--white);
 }
 .single-icon:hover {
-  color: var(--black);
+  color: #f76363;
 }
 
 .Home-social-icons {
@@ -441,7 +450,7 @@ h4 {
   position: relative;
   bottom: 0;
   width: 100%;
-  height: 2rem;
+  height: 4rem;
   background-color: transparent;
   text-align: center;
   z-index: 1;
@@ -481,15 +490,16 @@ h4 {
 /* BOX SHADOWS */
 
 .box-shadow {
-  box-shadow: 3px 3px 3px 3px black;
-  padding: 6px;
-  border-radius: 15px;
-  transition: all 0.25s ease 0s !important;
-  margin-bottom: 1rem;
+  border: 1px solid rgb(255, 255, 255); /* 5px solid border */
+  padding: 12px; /* Inner padding */
+  transition: all 0.1s ease 0s !important; /* Transition for smooth effects */
+  margin-bottom: 1rem; /* Margin below the box */
+  border-radius: 0; /* Ensure no border radius */
 }
+
 .box-shadow:hover {
-  box-shadow: 5px 5px 5px 5px black;
-  border-radius: 15px;
+  border: 2px solid rgb(255, 255, 255); /* 5px solid border */
+  /* border-radius: 15px; */
   transform: scale(1.02) !important;
   overflow: hidden !important;
 }

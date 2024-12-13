@@ -1,22 +1,18 @@
 import React, { useState } from "react";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import Container from "react-bootstrap/Container";
-// import logo from "../Assets/maulikportfoliobig.png";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import {
-  AiOutlineHome,
-  AiOutlineFundProjectionScreen,
-  AiOutlineUser,
-} from "react-icons/ai";
-import { FaLaptopCode, FaAward } from "react-icons/fa";
-import { CgFileDocument } from "react-icons/cg";
-import { MdWork } from "react-icons/md";
+// import {
+//   AiOutlineHome,
+//   AiOutlineFundProjectionScreen,
+//   AiOutlineUser,
+// } from "react-icons/ai";
+// import { FaLaptopCode, FaAward } from "react-icons/fa";
+// import { CgFileDocument } from "react-icons/cg";
+// import { MdWork } from "react-icons/md";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+
   function scrollHandler() {
     if (window.scrollY >= 20) {
       updateNavbar(true);
@@ -32,125 +28,110 @@ function NavBar() {
     const yOffset = -120;
     window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
   };
+
   return (
-    <Navbar
-      fluid
-      expanded={expand}
-      fixed="top"
-      expand="md"
-      className={navColour ? "sticky" : "navbar"}
+    <nav
+      className={`fixed top-0 border-b-[1px] left-0 w-full z-50 transition-all ease-out duration-300 ${
+        navColour
+          ? "bg-backgroundColor shadow-lg"
+          : "bg-backgroundColor md:bg-transparent"
+      }`}
     >
-      <Container>
-        <Navbar.Brand href="/" className="d-flex">
-          <div className="logo">MAULIK's PORTFOLIO</div>
-          {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
-        </Navbar.Brand>
-        <Navbar.Toggle
-          aria-controls="responsive-navbar-nav"
-          onClick={() => {
-            updateExpanded(expand ? false : "expanded");
-          }}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </Navbar.Toggle>
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mx-auto" defaultActiveKey="#home">
-            <Nav.Item>
-              <Nav.Link
-                as={HashLink}
-                smooth
-                to="/#top"
-                onClick={() => {
-                  updateExpanded(false);
-                }}
-              >
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
-              </Nav.Link>
-            </Nav.Item>
+      <div className="max-w-7xl   mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex  justify-between align-middle items-center h-20 md:h-20">
+          {/* Brand Name */}
+          <div className="flex items-center">
+            <span className="text-xl font-semibold text-white">
+              Maulik Chopra
+            </span>
+          </div>
 
-            <Nav.Item>
-              <Nav.Link
-                as={HashLink}
-                smooth
-                to="/#about"
-                scroll={(el) => scrollWithOffset(el)}
-                onClick={() => {
-                  updateExpanded(false);
-                }}
-              >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link
-                as={HashLink}
-                to="/#experience"
-                scroll={(el) => scrollWithOffset(el)}
-                onClick={() => {
-                  updateExpanded(false);
-                }}
-              >
-                <MdWork style={{ marginBottom: "2px" }} /> Experience
-              </Nav.Link>
-            </Nav.Item>
+          {/* Hamburger Button */}
+          <button
+            className="text-white md:hidden focus:outline-none"
+            onClick={() => updateExpanded(!expand)}
+          >
+            <span className="block w-6 h-1 bg-white mb-1"></span>
+            <span className="block w-6 h-1 bg-white mb-1"></span>
+            <span className="block w-6 h-1 bg-white"></span>
+          </button>
 
-            <Nav.Item>
-              <Nav.Link
-                as={HashLink}
-                to="/#skills"
-                scroll={(el) => scrollWithOffset(el)}
-                onClick={() => {
-                  updateExpanded(false);
-                }}
-              >
-                <FaLaptopCode style={{ marginBottom: "2px" }} /> Skills
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={HashLink}
-                to="/#awards"
-                scroll={(el) => scrollWithOffset(el)}
-                onClick={() => {
-                  updateExpanded(false);
-                }}
-              >
-                <FaAward style={{ marginBottom: "2px" }} /> Awards
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={HashLink}
-                to="/#projects"
-                scroll={(el) => scrollWithOffset(el)}
-                onClick={() => {
-                  updateExpanded(false);
-                }}
-              >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
-            </Nav.Item>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+          {/* Nav Links */}
+          <div
+            className={`md:flex md:space-x-4 ${
+              expand ? "block" : "hidden"
+            } absolute  border-b-[1px] md:border-0 md:relative top-16 left-0 md:top-0 bg-backgroundColor md:bg-transparent w-full md:w-auto px-4 py-4 md:px-0 md:py-0`}
+          >
+            <HashLink
+              to="/#top"
+              smooth
+              className="block md:inline-block text-white hover:text-gray-300 py-2 md:py-0"
+              onClick={() => updateExpanded(false)}
+            >
+              🏠 Home
+            </HashLink>
+            <HashLink
+              to="/#about"
+              smooth
+              className="block md:inline-block text-white hover:text-gray-300 py-2 md:py-0"
+              scroll={(el) => scrollWithOffset(el)}
+              onClick={() => updateExpanded(false)}
+            >
+              🎓 About
+            </HashLink>
+            <HashLink
+              to="/#experience"
+              smooth
+              className="block md:inline-block text-white hover:text-gray-300 py-2 md:py-0"
+              scroll={(el) => scrollWithOffset(el)}
+              onClick={() => updateExpanded(false)}
+            >
+              🚀 Experience
+            </HashLink>
+            <HashLink
+              to="/#skills"
+              smooth
+              className="block md:inline-block text-white hover:text-gray-300 py-2 md:py-0"
+              scroll={(el) => scrollWithOffset(el)}
+              onClick={() => updateExpanded(false)}
+            >
+              🧠 Skills
+            </HashLink>
+            <HashLink
+              to="/#awards"
+              smooth
+              className="block md:inline-block text-white hover:text-gray-300 py-2 md:py-0"
+              scroll={(el) => scrollWithOffset(el)}
+              onClick={() => updateExpanded(false)}
+            >
+              🎖️ Certificates
+            </HashLink>
+            <HashLink
+              to="/#projects"
+              smooth
+              className="block md:inline-block text-white hover:text-gray-300 py-2 md:py-0"
+              scroll={(el) => scrollWithOffset(el)}
+              onClick={() => updateExpanded(false)}
+            >
+              📱 Projects
+            </HashLink>
+            <a
+              href="https://drive.google.com/file/d/1sJkFA9ZiZBIZnML9Sh3jGGj0oG5hs4-v/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block md:inline-block w-full md:w-auto text-white hover:text-gray-300 py-2 md:py-0"
+              onClick={() => updateExpanded(false)}
+            >
+              <div className="flex justify-center md:justify-start">
+                <div className="border-1 rounded-md p-1 border-textColor font-bold transition duration-200 hover:bg-textColor">
+                  📄 My Resume
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
   );
 }
 

@@ -25,9 +25,13 @@ function App() {
 
   return (
     <Router>
-      <Preloader load={load} />
-      <Particle />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
+      {/* <Preloader load={load} /> */}
+      {/* <Particle /> */}
+
+      <div
+        className="App z-0 font-newsreader font-medium text-xl antialiased bg-gradient-to-r from-[#010810] to-[#010810] m-0"
+        id={load ? "no-scroll" : "scroll"}
+      >
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
