@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import ProjectCard from "../Projects/ProjectCards";
 import cs50 from "../../Assets/certificates/cs50.png";
 import wharton from "../../Assets/certificates/wharton.png";

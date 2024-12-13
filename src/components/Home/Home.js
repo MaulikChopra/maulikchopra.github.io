@@ -1,9 +1,9 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Container, Row, Col } from "react-bootstrap";
+// import { Link } from "react-router-dom";
 
 import Type from "./Type";
-import { CgFileDocument } from "react-icons/cg";
+// import { CgFileDocument } from "react-icons/cg";
 
 import homeLogo from "../../Assets/maulikpic.png";
 // import hiByeEmoji from "../../Assets/hi-bye-emoji.png";
@@ -12,8 +12,8 @@ import Projects from "../Projects/Projects";
 import Awards from "../awards/awards";
 import About from "./About";
 import Experience from "./Experience";
-import { SkillGauntlet, SkillList } from "./Skills";
-import { HashLink } from "react-router-hash-link";
+import { SkillList } from "./Skills";
+// import {  } from "react-router-hash-link";
 import Education from "./Education";
 
 function Home() {

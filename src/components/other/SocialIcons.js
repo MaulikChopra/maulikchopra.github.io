@@ -1,9 +1,9 @@
 import React from "react";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
-  AiFillMediumCircle,
-  AiFillYoutube,
+  // AiOutlineTwitter,
+  // AiFillMediumCircle,
+  // AiFillYoutube,
 } from "react-icons/ai";
 import { HiMail } from "react-icons/hi";
 import { FaLinkedinIn } from "react-icons/fa";

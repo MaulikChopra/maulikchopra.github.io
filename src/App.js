@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Preloader from "../src/components/other/Pre";
+// import Preloader from "../src/components/other/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 // import About from "./components/About/About";
@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 // import { Container } from "react-bootstrap";
-import Particle from "./components/other/Particle";
+// import Particle from "./components/other/Particle";
 
 function App() {
   const [load, upadateLoad] = useState(true);
