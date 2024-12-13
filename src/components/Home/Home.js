@@ -24,7 +24,7 @@ function Home() {
           {/* LEFT COLUMN */}
           <Col md={7} className=" flex flex-col">
             {/* HI + WAVE EMOJI  */}
-            <h1 className="text-3xl md:text-4xl font-semibold mb-4">
+            <h1 className="text-3xl md:text-4xl font-semibold mb-4 text-white">
               Hi! 👋🏻
               {/* <span className="wave" role="img" aria-labelledby="wave">
                 <img
@@ -36,7 +36,7 @@ function Home() {
             </h1>
 
             {/* BOLD HEADING OF NAME */}
-            <h1 className=" text-2xl lg:text-5xl mb-4">
+            <h1 className=" text-2xl lg:text-5xl mb-4 text-white">
               I'm{" "}
               <b className=" text-4xl md:text-6xl font-bold text-textColor">
                 Maulik Chopra
