@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ac66b72b.css",
-    "main.js": "/static/js/main.9750b390.js",
+    "main.js": "/static/js/main.b53815f3.js",
     "static/media/maulikpic.png": "/static/media/maulikpic.5f0e0137f0cd3d169997.png",
     "static/media/9minreadswebsite.png": "/static/media/9minreadswebsite.510bddacebaefc7cac71.png",
     "static/media/wharton.png": "/static/media/wharton.16886a22664775dd1114.png",
@@ -19,10 +19,10 @@
     "static/media/pre.svg": "/static/media/pre.c761e89ae1146c58c4b2.svg",
     "index.html": "/index.html",
     "main.ac66b72b.css.map": "/static/css/main.ac66b72b.css.map",
-    "main.9750b390.js.map": "/static/js/main.9750b390.js.map"
+    "main.b53815f3.js.map": "/static/js/main.b53815f3.js.map"
   },
   "entrypoints": [
     "static/css/main.ac66b72b.css",
-    "static/js/main.9750b390.js"
+    "static/js/main.b53815f3.js"
   ]
 }
