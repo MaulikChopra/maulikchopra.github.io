@@ -28,7 +28,7 @@ export default function SocialIcons(props) {
       </li>
       <li className="single-icon-list">
         <a
-          href="https://twitter.com/IamMaulikChopra"
+          href="https://www.linkedin.com/in/maulikchopra/"
           className="single-icon"
           target="_blank"
           rel="noopener noreferrer"
