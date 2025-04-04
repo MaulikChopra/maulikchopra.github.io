@@ -15,12 +15,12 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Install Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: "16.x" # Use LTS version like 16.x
+          node-version: "16.x"
 
       - name: Install NPM packages
         run: npm ci
@@ -28,12 +28,11 @@ jobs:
       - name: Build project
         run: npm run build
 
-      # Uncomment this if you have tests to run
-      # - name: Run tests
-      #   run: npm run test
+      - name: Verify Build Output
+        run: ls -la ./build # Check if build files exist
 
       - name: Upload production-ready build files
-        uses: actions/upload-artifact@v3 # Updated to v3
+        uses: actions/upload-artifact@v4
         with:
           name: production-files
           path: ./build
@@ -45,11 +44,17 @@ jobs:
     if: github.ref == 'refs/heads/main'
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: Download artifact
-        uses: actions/download-artifact@v3 # Updated to v3
+        uses: actions/download-artifact@v4
         with:
           name: production-files
           path: ./build
+
+      - name: Verify Downloaded Files
+        run: ls -la ./build # Ensure files exist
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
