@@ -5,7 +5,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import Type from "./Type";
 // import { CgFileDocument } from "react-icons/cg";
 
-import homeLogo from "../../Assets/maulikpic.png";
+// import homeLogo from "../../Assets/maulikpic.png";
+import maulikpic2 from "../../Assets/maulikpic22.jpeg";
 // import hiByeEmoji from "../../Assets/hi-bye-emoji.png";
 import SocialIcons from "../other/SocialIcons";
 import Projects from "../Projects/Projects";
@@ -72,7 +73,7 @@ function Home() {
             className="flex justify-center md:justify-start mt-6 md:mt-0"
           >
             <img
-              src={homeLogo}
+              src={maulikpic2}
               alt="home pic"
               className=" object-cover rounded-3xl"
             />

@@ -5,6 +5,7 @@ import cs50 from "../../Assets/certificates/cs50.png";
 import wharton from "../../Assets/certificates/wharton.png";
 import mitx from "../../Assets/certificates/mitx.png";
 import harvardx from "../../Assets/certificates/harvardx.png";
+import googlePrompting from "../../Assets/certificates/GooglePrompting.png";
 
 function Awards() {
   const imageSize = "20%";
@@ -37,6 +38,24 @@ function Awards() {
           }
           tech=""
           certificateLink="https://coursera.org/share/b83e384e25a6d33509bf37de2a1f4d55"
+        />
+        <ProjectCard
+          imgPath={googlePrompting}
+          title="Google Prompting Essentials"
+          description={
+            <>
+              • Became a master at Prompt Engineering to create prompts for
+              every scenario like text, image, visualization, summarization, &
+              reasoning.
+              <br></br>• Implemented chain-of-thought, few-shot, zero-shot,
+              multimodal, human-in-loop, and prompt versioning techniques.
+              <br></br>
+              <b>Grade acheived: 94%"</b>
+            </>
+          }
+          imgSize={imageSize}
+          certificateLink="https://coursera.org/share/9638fc5f677965f208f592bb5aa5ceca"
+          tech=""
         />
         <ProjectCard
           imgPath={mitx}
