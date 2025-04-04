@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.ac66b72b.css",
-    "main.js": "/static/js/main.b53815f3.js",
-    "static/media/maulikpic.png": "/static/media/maulikpic.5f0e0137f0cd3d169997.png",
+    "main.js": "/static/js/main.ce367f9f.js",
     "static/media/9minreadswebsite.png": "/static/media/9minreadswebsite.510bddacebaefc7cac71.png",
+    "static/media/GooglePrompting.png": "/static/media/GooglePrompting.e555e72332e59f4fd1ec.png",
     "static/media/wharton.png": "/static/media/wharton.16886a22664775dd1114.png",
     "static/media/my-tech-gauntlet-stonesV2.png": "/static/media/my-tech-gauntlet-stonesV2.6103cf0258a0dd482fc3.png",
     "static/media/cs50.png": "/static/media/cs50.1d63461c5b8a77cd6c03.png",
@@ -13,16 +13,17 @@
     "static/media/auctionaire4.png": "/static/media/auctionaire4.1296b97724e574d11035.png",
     "static/media/mail1.png": "/static/media/mail1.d9e5542aa04c45b6a671.png",
     "static/media/harvardx.png": "/static/media/harvardx.94815e3704659475b0f1.png",
+    "static/media/maulikpic22.jpeg": "/static/media/maulikpic22.5c663191d909a7579188.jpeg",
     "static/media/Technologies.png": "/static/media/Technologies.b30b64a9b4afce53800b.png",
     "static/media/twitterbot.png": "/static/media/twitterbot.233da5cf4dbab4591d2d.png",
     "static/media/gauntlet-mini.png": "/static/media/gauntlet-mini.c35425db4118d5f7d496.png",
     "static/media/pre.svg": "/static/media/pre.c761e89ae1146c58c4b2.svg",
     "index.html": "/index.html",
     "main.ac66b72b.css.map": "/static/css/main.ac66b72b.css.map",
-    "main.b53815f3.js.map": "/static/js/main.b53815f3.js.map"
+    "main.ce367f9f.js.map": "/static/js/main.ce367f9f.js.map"
   },
   "entrypoints": [
     "static/css/main.ac66b72b.css",
-    "static/js/main.b53815f3.js"
+    "static/js/main.ce367f9f.js"
   ]
 }
