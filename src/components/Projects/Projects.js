@@ -3,14 +3,14 @@ import { Container, Row } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 
 // IMAGES PATHS, change here only
-import twitterbotImage from "../../Assets/Projects/twitterbot.png";
-import auctionaireImage from "../../Assets/Projects/auctionaire4.png";
-import mailImage from "../../Assets/Projects/mail1.png";
+// import twitterbotImage from "../../Assets/Projects/twitterbot.png";
+// import auctionaireImage from "../../Assets/Projects/auctionaire4.png";
+// import mailImage from "../../Assets/Projects/mail1.png";
 // import googlecloneImage from "../../Assets/Projects/search1.png";
 // import wikicloneImage from "../../Assets/Projects/wiki5.png";
 import minreadswebsite from "../../Assets/Projects/9minreadswebsite.png";
 import minreadsapp from "../../Assets/Projects/9minreadsapp.png";
-import twitterclone from "../../Assets/Projects/twitterclone.png";
+// import twitterclone from "../../Assets/Projects/twitterclone.png";
 
 function Projects() {
   return (
