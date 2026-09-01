@@ -16,7 +16,7 @@ module.exports = {
         white: "white",
         textColor: "#FFC000",
         //#f76363 old
-        secondaryColor: "#f76363",
+        secondaryColor: "#FFC000",
         backgroundColor: "#010810",
       },
       // fontSize: {
