@@ -42,6 +42,7 @@ function Projects() {
             demoLink="https://9minreads.vercel.app"
           />
         </div>
+               {/*
         <div className="">
           <ProjectCard
             imgPath={twitterbotImage}
@@ -81,7 +82,9 @@ highest bidder win. Advanced features like sorting by Category, and User watchli
             demoLink="https://mail-cs50web.herokuapp.com/"
           />
         </div>
-        {/* <div className="">
+
+  
+        <div className="">
           <ProjectCard
             imgPath={googlecloneImage}
             title="Google search!"
