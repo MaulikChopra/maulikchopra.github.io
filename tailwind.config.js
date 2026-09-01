@@ -14,9 +14,9 @@ module.exports = {
         darkPurple: "#87209e",
         black: "black",
         white: "white",
-        textColor: "#FFC000",
+        textColor: "#E46C4D",
         //#f76363 old
-        secondaryColor: "#FFC000",
+        secondaryColor: "#E46C4D",
         backgroundColor: "#010810",
       },
       // fontSize: {
