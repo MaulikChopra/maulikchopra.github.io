@@ -9,16 +9,15 @@ function About() {
         About me{" "}
       </h1>
       <p className="text-left">
-        A passionate Full-Stack Web Developer 💻 | Mobile App Developer 📱 | AI
-        and LLM Engineer 🤖 | Entrepreneur 🚀 | Founder of 9 Minute Reads 📚 |
+        A passionate Product Manager 📱 | Business Analyst 📈 | Full-Stack Developer 💻 | Founder 🚀
         <br />I am experienced in building
         <b className="text-textColor">
           &nbsp;Websites, Apps, and Products.&nbsp;
         </b>
         <br></br>
-        <br></br>I am a highly motivated developer with extensive experience in
+        <br></br>I am extremely good at
         <b className="text-textColor">
-          &nbsp;AI development and full-stack web technologies
+          &nbsp;Leadership and Management
         </b>
         , having fine-tuned large language models (LLMs) and launched scalable,
         user-centric web applications. My career highlights include{" "}
@@ -43,9 +42,9 @@ function About() {
         development best practices, and a growth mindset with me.
         <br></br>
         <br></br>
-        My goal is to advance in roles where I can merge AI innovation,
+        My goal is to advance in roles where I can merge AI,
         full-stack development, and creative problem-solving to build products
-        that solve real-world challenges.
+        and lead teams.
         <br></br>
         <br></br>
         Academically, I have earned the{" "}
