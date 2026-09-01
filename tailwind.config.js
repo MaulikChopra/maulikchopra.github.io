@@ -14,7 +14,8 @@ module.exports = {
         darkPurple: "#87209e",
         black: "black",
         white: "white",
-        textColor: "#f76363",
+        textColor: "#FFC000",
+        //#f76363 old
         secondaryColor: "#f76363",
         backgroundColor: "#010810",
       },
