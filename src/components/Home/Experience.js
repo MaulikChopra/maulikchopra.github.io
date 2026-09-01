@@ -7,6 +7,24 @@ function Experience() {
       >
         Experience
       </h1>
+               <div className="text-left">
+        <br></br>
+        <h1 className="text-2xl font-bold">
+          AI Product Management Intern @{" "}
+            <span className="text-textColor underline">AIRA Automation (now Amantra)</span>
+        </h1>
+        <i className="text-"> June 2024 - August 2024</i>
+
+        <br />
+        <span className="">
+          <b className="text-textColor"></b>● Managed client relationships and delivery for 10+ external clients, scoping requirements and translating them into deployed
+websites and funnels that boosted digital engagement by 300%.
+<br></br>● Collaborated with the product team to translate business requirements into technical workflows, bridging engineering execution
+and product strategy. Contributed to product management of an AI based agentic application.
+        </span>
+        <br />
+      </div>
+            
       <div className="text-left">
         <br></br>
         <h1 className="text-2xl font-bold">
@@ -43,9 +61,6 @@ function Experience() {
 
         <br />
         <span className="">
-          <b className="text-textColor"></b>● Implemented websites and funnels
-          for over 10 clients, boosting their digital presence and engagement by
-          300%.
           <br></br>● Delivered tailored software solutions to NGOs, enhancing
           operational efficiency by 50% for over 700 volunteers.
         </span>
