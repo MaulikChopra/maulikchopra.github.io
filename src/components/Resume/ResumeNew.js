@@ -5,8 +5,8 @@ import Button from "react-bootstrap/Button";
 
 import { AiOutlineDownload } from "react-icons/ai";
 
-const resumelink =
-  "https://drive.google.com/file/d/1sJkFA9ZiZBIZnML9Sh3jGGj0oG5hs4-v/view?usp=drive_link";
+const resumelink = "https://drive.google.com/file/d/17DqfFXqrzTNe2PgJHuYSZzlo-CylaUHz/view?usp=drive_link"
+  //"https://drive.google.com/file/d/1sJkFA9ZiZBIZnML9Sh3jGGj0oG5hs4-v/view?usp=drive_link";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
