@@ -39,6 +39,18 @@ function Awards() {
           tech=""
           certificateLink="https://coursera.org/share/b83e384e25a6d33509bf37de2a1f4d55"
         />
+            <ProjectCard
+          imgPath={"https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~O9NMWXEIMCSI/CERTIFICATE_LANDING_PAGE~O9NMWXEIMCSI.jpeg"}
+          title="Professional Skills for International Business"
+          description={
+            <>
+            by University of London.
+            </>
+          }
+          imgSize={imageSize}
+          certificateLink="https://www.coursera.org/account/accomplishments/records/O9NMWXEIMCSI"
+          tech=""
+        />
         <ProjectCard
           imgPath={googlePrompting}
           title="Google Prompting Essentials"
